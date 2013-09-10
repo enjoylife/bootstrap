@@ -104,6 +104,13 @@ module.exports = function(grunt) {
         expand: true,
         src: ["fonts/*"],
         dest: 'dist/'
+      },
+      blog: {
+        flatten: true,
+        expand:true,
+        cwd: 'dist/css',
+        src:'bootstrap.min.css',
+        dest: '../../Blog/static/css/'
       }
     },
 
@@ -147,8 +154,8 @@ module.exports = function(grunt) {
       },
       recess: {
         files: 'less/*.less',
-        tasks: ['recess']
-      }
+        tasks: ['recess','copy:blog']
+      },
     }
   });
 
@@ -185,7 +192,7 @@ module.exports = function(grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify']);
 
   // CSS distribution task.
-  grunt.registerTask('dist-css', ['recess']);
+  grunt.registerTask('dist-css', ['recess', 'copy:blog']);
 
   // Fonts distribution task.
   grunt.registerTask('dist-fonts', ['copy']);
