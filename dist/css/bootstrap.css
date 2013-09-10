@@ -386,8 +386,8 @@ hr {
   font-family: 'procionoregular';
   font-style: normal;
   font-weight: normal;
-  src: url('Prociono-Regular-webfont.eot');
-  src: url('Prociono-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('Prociono-Regular-webfont.woff') format('woff'), url('Prociono-Regular-webfont.ttf') format('truetype'), url('Prociono-Regular-webfont.svg#procionoregular') format('svg');
+  src: url('../fonts/Prociono-Regular-webfont.eot');
+  src: url('../fonts/Prociono-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Prociono-Regular-webfont.woff') format('woff'), url('../fonts/Prociono-Regular-webfont.ttf') format('truetype'), url('../fonts/Prociono-Regular-webfont.svg#procionoregular') format('svg');
 }
 
 p {
@@ -535,7 +535,7 @@ h6 small {
 
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 60px;
 }
 
 h2,
